@@ -1,0 +1,22 @@
+name: MyGithubAction
+
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  my_test1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: MyMessage1
+      run: echo "Hello World"  
+      
+      
+  my_test2:
+    runs-on: 	windows-latest
+
+    steps:
+    - name: MyMessage2
+      run: echo "Bye bye World"
